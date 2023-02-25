@@ -1,4 +1,4 @@
 Tugas Praktikum 2_Version Control GIT
 1. [Soal Prioritas 1] membuat folder pada repository GIT : Jawaban pada file screenshot
 2. [Soal Prioritas 2] membuat branch baru pada main/master lalu pull request : Jawaban pada file screenshots
-3. [Soal Eksplorasi] membuat projek bebas denagn workflow sederhana, melakukan managemen konflik, melakukan code review
+3. [Soal Eksplorasi] membuat projek bebas denagn workflow sederhana, melakukan managemen konflik, melakukan code review : Belum sepenuhnya terselesaikan karena masih terdapat kendala memahami pembuatan branch jika melalui vs code
