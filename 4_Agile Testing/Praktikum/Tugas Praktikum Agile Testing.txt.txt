@@ -1,0 +1,27 @@
+
+1. [Soal Prioritas] Pada fase apa saja QE berperan pada proses SDLC? Sebutkan dan jelaskan peran seperti apa yang QE dapat lakukan pada setiap fase tersebut!
+>> Peran QA menurut SDLC sendiri yaitu pada setiap tahap pembuatan suatu sistem tersebut, dimulai dengan proses planning, proses desain hingga proses maintenance
+>> Pada tahap Planning, seorang QA bertugas untuk mengumpulkan segala requirement yang diperlukan untuk mebuat sebuah web atau sistem sesuai dengan kualifikasi yang diminta oleh klien, selanjutnya seorang QA bertugas untuk
+melakukan analisis review dan verivikasi dokumen SRS. Pada tahap design, seorang QA memiliki tanggung jawab untuk mengumpulkan flowchart yang berguna untuk mengidentifikasi aspek fitur atau desain yang bisa saja/potensial menyebabkan bug atau masalah,
+kemudian QA juga bertugas untuk memulai membuat Test Scenario dan juga Test Case. Pada tahap Development, QA melakukan pengajuan Test Scenario ke tip developer dan juga project manager dan lebih mempertimbangkan pengujian dengan user experience
+Pada Tahap Testing merupakan Tugas yang wajib untuk dilakukan seorang QA, seperti menuliskan test case dengan penelusuran yang dilakukan dengan sangat rinci pada setiap desain dan fiturnya, menuliskan bug report, dan juga melacak potensi fitur yang bisa mendapatkan update
+Ketika pada tahap Deployment QA akan memastikan bahwa produk yang dibuat memiliki kualitas yang tinggi oleh karena itu dilakukan beberapa rangkaian tes seperti Regression Testing, Smoke Testing, Sanity testing, E2E Testing, UAT Testing. 
+Pada tahapan terakhir yaitu Maintenance tugas QA adalah untuk berjaga jika diperlukannya untuk melakukan pengujian ulang ketika produk telah selesai dibuat dan diluncurkan.
+
+2. [Soal Prioritas] Menurut Anda, apa tantangan ketika menerapkan agile testing? Berikan penjelasan pada masing-masing 5 poin agile testing manifesto!
+>> tantangan ketika menerapkan agile manifesto adalah masa produksi atau pembuatan suatu progrram menghabiskan wktu yang lebih lama, namun jika klien menghendaki untuk ada tenggat waktu maka akan menimbulkan hasil dari pembuatan dan pengujian tidak maksimal dan bisa saja masih terdapat
+bug yang tidak terdeteksi sejak awal. pada agile testing manifesto terdapat lima poin yang harus diperhatikan ketika menjadi seorang QA yaitu:
+- Testing throughout over testing at the end.
+  melakukan tes secara berkala memang sangat penting untuk seorang tester , hal ini dilakukan dengan tujuan supaya QA tidak kewalahan ketika harus menguji semua fiturnya diakhir proses developmen
+- Preventing bugs over finding bugs.
+  mencegah adanya bug dalam sistem lebih utama daripada berusaha untuk mencari-cari kesalahan pada coding atau bug, maka dari itu seorang QA harus paham mengenai potensi-potensi yang dapat menjadi pemicu munculnya bug
+- Testing understanding over checking functionality.
+  seorang QA tidak akan hanya menguji sistem yang dibuat oleh tim developer tapi juga memahami tentang apa yang sedang diuji dan memahami kebutuhan dari user seperti adanya fitur FAQ dimana ketika sistem telah menjadi otomatis maka QA harus bisa menempatkan posisi menjadi user sebelum sistem di deploy
+- Building the system OVER breaking the system.'
+  ketika QA melakukan pengujian negatif dan positif, kebanyakan QA akan merasa senang jika menemukan bug, namun tujuan utama  adalah menciptakan produk yang berkualitas maka seharusnya QA memposisikan diri dari prespektif user yang mana bisa memberi masukan pada developer
+- Team responsibility for quality OVER tester responsibility.
+  beban kesalahan jika ada bug atau sistem yang lolos tes itu tidak hanya merupakan kesalahan dari QA karena suatu produk itu merupakan tanggung jawab seluruh tim sehingga masing-masing anggotanya pun berperan penting dalam membuat kualitasnya menjadi tinggi yaitu dengan adanya networking yang bagus dan juga komunikasi yang baik antar anggota
+
+sumber :
+https://medium.com/@ersandibillah03/apa-itu-testing-manifesto-7a53cee24a4e
+https://www.binaracademy.com/blog/tugas-dan-tahapan-software-quality-assurance
