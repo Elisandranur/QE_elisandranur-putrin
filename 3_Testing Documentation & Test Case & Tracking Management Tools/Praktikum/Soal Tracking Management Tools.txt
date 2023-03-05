@@ -1,0 +1,6 @@
+Buatlah simulasi terjadinya bugs pada suatu feature (Story, Task, Subtask). 
+Deskripsikan Feature dan Bugs (minimal 2 untuk bugs) dari simulasi yang dibuat pada Jira.
+Lampirkan screenshot step-step pekerjaan berupa docs atau pdf.
+
+>> Jawaban :
+*screenshots terdapat pada folder screenshoots

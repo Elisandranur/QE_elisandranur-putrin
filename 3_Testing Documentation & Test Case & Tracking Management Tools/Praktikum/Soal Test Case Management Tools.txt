@@ -1,0 +1,5 @@
+Implementasikan penggunaan test case management tools untuk aplikasi [https://www.sepulsa.com/](https://www.sepulsa.com/) dengan kriteria sebagai berikut:
+  1. Menggunakan TestRail sebagai test case management tools.
+  2. Terdapat 3 fitur yang dilakukan testing yaitu login, pilih produk dan pilih metode pembayaran.
+  3. Setiap test case terdapat case positif dan negatif.
+Jawaban >> Pada folder screenshots

@@ -1,0 +1,21 @@
+1. [Soal Prioritas 1]
+   Buatlah Test Case sebanyak mungkin pada fitur login, pilih produk sampai pilih metode pembayaran dari https://www.sepulsa.com/ 
+   dengan menggunakan format laporan yang sudah ditentukan. Letakkan kumpulan test case tersebut dalam bentuk file excel.
+   >> file spreadsheet: https://docs.google.com/spreadsheets/d/1i04_JpznktG4ibqZPYZRXy4-55rISvjK/edit?usp=sharing&ouid=103404061818487775081&rtpof=true&sd=true
+2. [Soal Prioritas 2]
+   Buatlah test case untuk aplikasi  https://www.sepulsa.com/ untuk fitur register, lihat artikel dan lihat riwayat transaksi 
+   dengan menggunakan format laporan yang sudah ditentukan. Letakkan kumpulan test case tersebut dalam bentuk file excel.
+   >> file spreadsheet : https://docs.google.com/spreadsheets/d/1i04_JpznktG4ibqZPYZRXy4-55rISvjK/edit?usp=sharing&ouid=103404061818487775081&rtpof=true&sd=true 
+3. [Soal Eksplorasi]
+   Lakukan pengujian non fungsional untuk aplikasi [https://www.sepulsa.com/](https://www.sepulsa.com/) dengan menggunakan Lighthouse. Referensi mengenai Lighthouse dapat dicek di link 
+   [berikut](https://developer.chrome.com/docs/lighthouse/overview/). Kriteria untuk pengujian non fungsional adalah sebagai berikut:
+    1. Terdapat pengujian non fungsional untuk tampilan di web dan mobile.
+    2. Terdapat screenshot hasil pengujian untuk 2 platform (web dan mobile) beserta penjelasan dari hasil pengujian yang telah dilakukan.
+    3. Hasil pengujian ditulis dalam google docs.
+    4. Contoh hasil pengujian dengan menggunakan Lighthouse 
+   >> Hasil Pengujian:https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.sepulsa.com%2F&form_factor=desktop 
+    Berdasarkan hasil pengujian melalui pagespees dalam versi dekstop, sepulsa.com memiliki LCP kecepatan pengaksesan pada 3.1 sekon,
+    sedangkan dalam input delay pertama hanya berkisar 2milisekon yang mana merupakan keunggulan karena delaynya tidaklah lama dan tidak membuat user menunggu terlalu lama
+    Dalam versi dekstop performanya berada di angka 80 yang mana sangat cukup untuk sebuah web kembangan ini dengan nilai seo yang sempurna dan aksesibilat yang sangat bagus pada angka 97
+    sayangnya dalam praktiknya keamanan web ini memiliki kerentanan pada library javascript front-end dengan versi library Next.js@9.5.5
+    Jika melihat hasil dari versi mobile, telihat bahwa performanya tidak sebaik dari versi dekstop yang mana versi mobile berada pada tingkat cukup hingga kurang
