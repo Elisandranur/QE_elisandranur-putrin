@@ -1,0 +1,44 @@
+Prioritas 1_1
+//elisandra qec
+public class CalApp {
+    public static void main (String[] args){
+        int alas = 20;
+        int tinggi = 25;
+        int luas;
+        luas = (alas*tinggi)/2;
+        System.out.println("Luas Segitiga: "+ luas);
+
+        int panjang = 40;
+        int lebar = 6;
+        luas = panjang*lebar;
+        System.out.println("Luas Persegi panjang : "+ luas);
+
+
+        double phi = 3.14;
+        int r = 7;
+        double LUAS = (double) phi*r*r;
+        System.out.println("Luas Lingkaran : "+ LUAS);
+    }
+}
+
+
+
+Prioritas 1_2
+//elisandra qec
+public class JualApp {
+    public static void main(String[] args) {
+        int hargaBeli = 15000; // masukkan angka sesuai soal
+        int hargaJual = 30000; // masukkan angka sesuai soal
+        int laba = hargaJual-hargaBeli;
+        int rugi = hargaBeli-hargaJual;
+
+        if (hargaJual > hargaBeli) {
+            System.out.println("Untung sebesar: " + laba);
+        } else if (hargaBeli > hargaJual){
+                System.out.println("Rugi sebesar: "+ rugi);
+            } else {
+            System.out.println("sama saja");}
+
+        // TODO: cek apakah hasil penjualan mengalami keuntungan / kerugian
+    }
+}

@@ -1,0 +1,41 @@
+Prioritas 2_1
+//ELISANDRA QEC
+//n=5
+public class LoopApp {
+    public void drawXYZ(int 5) {
+        for (int i = 1; i <= 5; i++) {
+            String row = ""; // Membuat string kosong untuk setiap baris
+            for (int j = 1; j <= 5; j++) {
+                if ((i + j) % 3 == 0) { // Jika kelipatan 3, tambahkan "X" ke baris
+                    row += "X";
+                } else if (j % 2 == 0) { // Jika kelipatan genap, tambahkan "Z" ke baris
+                    row += "Z";
+                } else { // Jika bukan kelipatan 3 atau genap, tambahkan "Y" ke baris
+                    row += "Y";
+                }
+            }
+            System.out.println(row); // Cetak baris yang sudah terbentuk
+        }
+    }
+}
+
+
+PRIORITAS 2_1
+
+public class AsterikApp {
+    public static void main(String[] args) {
+        int x = 5;
+        for (int i = 1; i <= x; i++) {
+            for (int j = 4; j >= i; j--) {
+                System.out.print(' ');
+            }
+            for (int k = 1; k <= i; k++) {
+                System.out.print('*');
+            }
+            for (int l = 1; l <= i - 1; l++) {
+                System.out.print('*');
+            }
+            System.out.println();
+        }
+    }
+}

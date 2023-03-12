@@ -1,0 +1,68 @@
+//ELISANDRA NUR QEC
+//PRIORITAS1
+
+public class Product {
+
+        private String Nama;
+        private int stock;
+         private int Harga;
+        private String deskripsi;
+
+
+
+
+        public Product(String nama, String description, int price, int stock){
+            this.Nama = nama;
+            this.deskripsi = description;
+            this.Harga = price;
+            this.stock = stock;
+        }
+
+
+        public String getNama(){
+            return Nama;
+        }
+        public void setNama(String nama){
+            this.Nama = nama;
+        }
+        public String getDescription(){
+            return deskripsi;
+        }
+        public void setDescription(String description){
+            this.deskripsi = description;
+        }
+        public int getPrice(){
+            return Harga;
+        }
+        public void setPrice(int price){
+            this.Harga = price;
+        }
+        public int getStock(){
+            return stock;
+        }
+        public void setStock(int stock){
+            this.stock = stock;
+        }
+
+
+        public void getInfo(){
+            System.out.println("===\nInfo Produk");
+            System.out.println("Nama Produk: " + Nama);
+            System.out.println("Deskripsi: " + deskripsi);
+            System.out.println("Harga: " + Harga);
+            System.out.println("Jumlah stok: " + stock);
+            System.out.println("========================");
+        }
+
+
+        public static void main(String[] args){
+            Product product1 = new Product("Coffe", "this is coffee", 15000, 10);
+            Product product2 = new Product("Milk", "this is fresh milk", 25000, 10);
+            Product product3 = new Product("Apple JUICE", "this is juice", 18000, 20);
+
+
+            product1.getInfo();
+            product2.getInfo();
+            product3.getInfo();
+        }
+}
