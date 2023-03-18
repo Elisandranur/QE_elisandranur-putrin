@@ -126,6 +126,33 @@ public class work2 {
     Input: [1, 2, 3, 4, 6], target=6
     
     Output: [1, 3]
+Jawaban:>
+import java.util.HashMap;
+import java.util.Map;
+public class work3 {
+    static int getPairsCount(int[] arr, int n, int target)
+    {
+        HashMap<Integer,Integer> map = new HashMap<>();
+        int pairs=0;
+        for (int i=0; i<n; i++)
+        {
+            if (map.containsKey(target + arr[i]))
+            {
+                pairs += map.get(target + arr[i]);
+                for (int j=1; j<=map.get(target +arr[i]); j++)
+                    System.out.print("(" + (target+arr[i]) + "," + (arr[i]) + ") ");
+            }
+            map.put(arr[i] , map.getOrDefault(arr[i],0)+1);
+        }
+        return pairs;
+    }
+    public static void main (String [] args)
+    {
+        int[] input = {1, 2, 3, 4, 6};
+        int target = 6;
+        System.out.println(getPairsCount(input , input.length , target));
+    }
+    }
     
     Explanation: The numbers at index 1 and 3 add up to 6: 2+4=6
     
@@ -147,6 +174,50 @@ public class work2 {
     
     Output: [3]
     
+Jawaban:>
+package Tugas;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.HashSet;
+
+public class work4 {
+    public static int[] arrayUnique(int[] arr1, int[] arr2) {
+        // Create a HashSet to store the unique elements of arr2
+        Set<Integer> uniqueSet = new HashSet<>();
+        for (int num : arr2) {
+            uniqueSet.add(num);
+        }
+
+        // Create a new ArrayList to store the unique elements of arr1
+        List<Integer> uniqueList = new ArrayList<>();
+        for (int num : arr1) {
+            if (!uniqueSet.contains(num)) {
+                uniqueList.add(num);
+            }
+        }
+
+        // Convert the ArrayList back to an array and return it
+        int[] uniqueArr = new int[uniqueList.size()];
+        for (int i = 0; i < uniqueList.size(); i++) {
+            uniqueArr[i] = uniqueList.get(i);
+        }
+        return uniqueArr;
+    }
+
+    public static void main(String[] args) {
+        int[] arr1 = {1, 2, 3, 4};
+        int[] arr2 = {1, 3, 5, 10, 16};
+        int[] uniqueArr1 = arrayUnique(arr1, arr2);
+        System.out.println(Arrays.toString(uniqueArr1));
+
+    }
+
+}
+
+
 5. Given an array of sorted numbers, remove all duplicates from it. You should not use any extra space; after removing the duplicates in-place return the length of the subarray that has no duplicate in it.
     
     **Sample Test Case**
@@ -162,6 +233,36 @@ public class work2 {
     Input: [2, 2, 2, 11]
     
     Output: 2
+Jawaban:>
+
+//Elisandra NPN QE C
+package Tugas;
+import java.util.Arrays;
+public class work5 {
+    //menyatakan penghapusan duplikat dari sebuah array
+    public static int removeDuplicates(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+        //mencari array unique dengan membandingkan j dengan i
+        int i = 0;
+        for (int j = 1; j < nums.length; j++) {
+            if (nums[j] != nums[i]) {
+                i++;
+                nums[i] = nums[j];
+            }
+        }
+        return i + 1;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {2, 3, 3, 3, 6, 9, 9};
+        int len = removeDuplicates(nums);
+        System.out.println(Arrays.toString(nums));
+        System.out.println(len);
+    }
+}
+
     
     Explanation: The first two elements after removing the duplicates will be [2, 11].
     
@@ -184,3 +285,33 @@ public class work2 {
     Explanation: Subarray with maximum sum is [3, 4].
     
     2, 1, 5, 1, 3, 2
+
+Jawaban:>
+package Tugas;
+//Elisandra NPN QE C
+public class work6 {
+    public static int maxSubArray(int[] nums, int k) {
+        int maxSum = 0;
+        int currSum = 0;
+        for (int i = 0; i < nums.length; i++) {
+            currSum += nums[i];
+            if (i >= k - 1) {  // mengecek apakah memiliki sub array untuk nilai k
+                if (currSum > maxSum) {
+                    maxSum = currSum;
+                }
+                currSum -= nums[i - k + 1];  //menghapus elemen pertama dan digantikan subarray baru
+            }
+        }
+        return maxSum;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {2, 1, 5, 1, 3, 2};
+        int k = 3;
+        int maxSum = maxSubArray(nums, k);
+        System.out.println(maxSum);
+
+    }
+
+
+}
