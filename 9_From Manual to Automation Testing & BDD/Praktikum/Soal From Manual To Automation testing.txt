@@ -1,0 +1,32 @@
+1. Jelaskan jenis-jenis dari performance testing (minimal: 3).
+ >>
+   a. Load Testing 
+      Pengujian jenis ini dilakukan dengan menentukan target beban. Biasanya digunakan untuk 
+      mempersiapkan acara musiman yang lalu lintasnya meningkat dari waktu ke waktu. Misalnya, 
+      sistem melakukan penjualan rumah untuk lebaran. Di kasus ini, jika semakin dekat dengan lebaran, 
+      semakin besar sistem lalu lintasnya. Jadi dapat menggunakan uji beban untuk mengetahui 
+      apakah sistem tersebut dapat menangani lalu lintas seperti yang diharapkan. Pengujian beban juga 
+      biasanya dilakukan dengan pengujian skalabilitas, yaitu. perlahan-lahan tingkatkan beban 
+      untuk setiap skenario dan kemudian pantau penggunaan sumber daya untuk melihat apakah ada perbedaan 
+      yang signifikan atau tidak. Misalnya: penggunaan CPU dan memori, atau perilaku sistem saat menaikkan 
+      atau menurunkan skala, apakah terlalu lambat atau terlalu cepat untuk menskalakan.
+   b. Stress Testing
+      merupakan nama lain dari capacity testing yaitu melakukan pengujian dengan load diluar ekspektasi 
+      sehingga sistemnya tidak akan mampu untuk menghandle trafik yang berjalan, tujuannya sendiri yaitu 
+      untuk mengetahui seberapa besar kapasistas yang mampu untuk dijalankan sistem tersebut.
+   c. Soak Testing
+      dapat disebut endurance testing, di mana pengujian dilakukan di bawah beban normal, tetapi untuk 
+      jangka waktu yang lama. Tujuannya adalah untuk menganalisis dan mengevaluasi perilaku sistem.
+      Biasanya digunakan untuk menentukan apakah sistem mengalami kebocoran memori selama penggunaan 
+      jangka panjang. 
+   d. Spike Testing
+      merupakan pengujian yang hampir mirip dengan load testing. tujuannya yaitu untuk mengetahui 
+      apakah sistem yang dibuat mampu mengatasi trafik sesuai dengan keinginan/permintaan, pada spike 
+      testing pengiriman load dilakukan secara tiba-tiba dengan waktu yang bersamaan.
+
+2. Sebutkan dan jelaskan tools yang dapat digunakan untuk melakukan performance testing (minimal: 3).
+ >>
+   - Apache JMeter, aplikasi open source berbasis Java yang bisa digunakan untuk performance test. jMeter bisa digunakan untuk melakukan load/stress testing Web Application, FTP Application dan Database server test. jMeter dapat dijalankan dengan 2 cara, yaitu dengan GUI atau non-GUI ( Command line ).
+   - Postman, sebuah aplikasi (berupa plugin) untuk browser chrome, fungsinya adalah sebagai REST Client atau istilahnya adalah aplikasi yang digunakan untuk melakukan uji coba REST API yang telah kita buat.
+   - Ranorex, alat yang baik untuk tes otomatisasi tidak hanya untuk terbaru, tetapi juga untuk versi awal dan sub-versi Android, mulai dari Android 2.2. 
+   - Test Complete, TestComplete berguna untuk pengujian aplikasi Web, seluler, dan desktop. Penguji dapat menggunakan JavaScript, VBScript, Python, atau C ++ Script untuk menulis skrip pengujian.  TestComplete juga memiliki mesin pengenalan objek yang dapat secara akurat mendeteksi elemen antarmuka pengguna yang dinamis. software ini sangat berguna dalam aplikasi yang memiliki antarmuka pengguna yang dinamis dan sering berubah
