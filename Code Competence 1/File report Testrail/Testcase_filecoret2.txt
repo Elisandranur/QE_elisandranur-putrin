@@ -1,0 +1,80 @@
+Code competence 1_Elisandra
+test case: 
+LOGIN
+- valid un valid pass
+- valid un, x pass
+- x un, valid pass
+- x un xpass
+- (funtional) button click
+
+user/admin has stable internet connection
+already open website "https://demo.opensourcepos.org/"
+already login with valid username and valid password
+- already have list of supplier(any supplier)
+- save contact of supplier
+
+user/admin open the website https://demo.opensourcepos.org/
+success to login to the website
+click the ITEM icon feature
+click the checkbox to edit the product description
+
+admin open the website https://demo.opensourcepos.org/
+success to login to the website
+click the REPORT icon feature
+admin choose the type of report
+admin fill the date to view report of selling item
+
+1. admin open the website https://demo.opensourcepos.org/
+2. success to login to the website
+3. click the SUPPLIER icon feature
+4. admin input number on "25 per page"
+
+ITEM
+-sebelum klik gabisa edit
+- form new item
+- add new
+- make sure link for generate barcode success
+- mengecek kesesuaian pembuatan barcode dengan item yang dipilih
+- update inventory harus melakukan edit setelah mengeklik
+- find item search
+- inventory account details memastikan POS yang edit mucul di update
+- update artikel item
+- update artikel gabisa dikirim kalau table harga kosong
+
+
+REPORT
+-grapik
+rentan waktu 2010 gabisa
+rentan waktu bisa sebulan
+button send
+bentuk diagram lingkaran
+-summary
+bentuknya table
+//////Sub-total: $47,536,338.00
+//////Tax: $0.00
+//////Total: $47,536,338.00
+//////Wholesale: $46,663,800.00
+//////Profit: $872,538.00
+-detail
+-inventory
+button send
+bentuk tabel
+
+SUPPLIER
+- ... result perpage
+- gabisa erase kalau tidak klik checkbox
+- send message to supplier feature
+- find supplier (+ -)
+- new supplier button 
+- new supplier tanpa mengisi yang wajib diisi
+- new supplier dengan supplier yang sudah pernah ada
+- bisa update data spplier tanpa klik checkbox
+- kalau ada emailnya bisa langsung kiriim email kalau gaada gabisa
+
+
+SALES
+- button daily sales menuju ke daftar hasil penjualan
+- symbol dollar ke struk belanja
+- send and erase data on sales 
+- pembelian barang akan tertampil di invoice baru dengan nama customer 
+- pengujian opsi suspend yang harusnya masuk ke daftar suspended
