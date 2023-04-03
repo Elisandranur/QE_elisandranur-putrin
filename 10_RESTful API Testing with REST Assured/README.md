@@ -1,6 +1,6 @@
 ### Resume Rest API with rest assured
 
-##Rest API with Rest assured
+## Rest API with Rest assured
 Data ditransfer menggunakan REST (Representational State Transfer) API berbasis web. Itu dilakukan pada CRUD (Make, read, Perbarui, delete) pada data melalui permintaan HTTP. Toolkit berbasis Java yang disebut Rest-assured menawarkan bahasa khusus domain untuk membuat pengujian API. Karena menawarkan cara yang mudah dan mudah dipahami untuk membuat pengujian API dan mendukung format data JSON dan XML, ini banyak digunakan untuk menguji API REST karena mampu mengirimkan permintaan HTTP dengan mudah dan memvalidasi balasan server menggunakan assured. API testing yang ditawarkannya menyediakan metode permintaan, URL, header, argumen, dan informasi payload.
 
 Fundamental test proses dari API meliputi
