@@ -1,0 +1,38 @@
+### Resume Fundamental Performance Test & Performance Testing with JMeter & Post Processor
+
+## Fundamental Performance Test
+Fundamental Performance mengacu pada karakteristik kinerja dasar atau yang mendasari sistem. Ini mencakup faktor-faktor seperti kecepatan, efisiensi, dan daya tanggap yang menentukan seberapa baik alat menjalankan fungsi intinya. Dalam kasus alat software seperti Postman, kinerja mendasar mungkin mengacu pada seberapa cepat dan akurat mengirim permintaan ke API, menerima tanggapan, dan menampilkan hasil. Mungkin juga mengacu pada seberapa efisien mengelola dan mengatur koleksi API, atau seberapa cepat dapat menghasilkan dokumentasi.
+
+Fundamental Performance penting karena memengaruhi seberapa efektif dan berguna alat tersebut untuk tujuan yang dimaksudkan. Alat dengan kinerja fundamental yang buruk mungkin kesulitan menangani tugas besar atau rumit, atau mungkin rentan terhadap kesalahan atau kerusakan. Sebaliknya, alat dengan kinerja dasar yang baik dapat menangani berbagai tugas dengan cepat dan andal, serta dapat membantu pengguna menjadi lebih produktif dan efisien. Beberapa tipe performance test yang digunakan seperti,
+- load testing
+- endurance testing
+- peak testing
+- stress test
+
+## Performance Testing with JMeter
+JMeter adalah alat yang digunakan untuk melakukan pengujian load, pengujian kinerja, dan pengujian fungsional aplikasi web, API, dan jenis sistem perangkat lunak lainnya. JMeter awalnya dikembangkan untuk menguji aplikasi web tetapi juga dapat digunakan untuk menguji jenis sistem perangkat lunak lain, seperti database dan server FTP. JMeter memungkinkan penguji untuk mensimulasikan sejumlah besar pengguna yang mengakses aplikasi web atau API, dan dapat menghasilkan laporan dan grafik untuk menganalisis hasil pengujian ini. Itu juga dapat digunakan untuk melakukan pengujian stress, di mana sistem didorong hingga batasnya untuk melihat bagaimana kinerjanya di bawah extreme load. JMeter mendukung berbagai protokol dan teknologi, antara lain HTTP, HTTPS, SOAP, REST, FTP, JDBC, LDAP, dan JMS. Ini dapat digunakan di berbagai platform, termasuk Windows, Linux, dan macOS.
+
+JMeter banyak digunakan oleh penguji dan pengembang untuk mengidentifikasi dan mendiagnosis masalah kinerja dalam sistem perangkat lunak dan untuk memastikan bahwa aplikasi dan API dapat menangani tingkat lalu lintas dan penggunaan yang diharapkan. Itu juga populer karena sifatnya open-source dan komunitas aktif yang mendukungnya, yang menyediakan berbagai macam plugin dan ekstensi untuk memperluas kemampuannya. Untuk mwnggunakan JMeter perlu untuk menyiapkan atau memahami hal berikut ini,
+- Rencanakan Pengujian Anda: Sebelum membuat rencana pengujian di JMeter, Anda harus memiliki pemahaman yang jelas tentang apa yang ingin Anda uji dan bagaimana Anda ingin mengujinya. Ini melibatkan identifikasi skenario pengujian, jenis permintaan yang ingin Anda kirim ke aplikasi atau sistem, dan beban yang diharapkan.
+- Buat Rencana Pengujian: Di JMeter, rencana pengujian adalah wadah untuk semua elemen pengujian Anda. Untuk membuat rencana pengujian, pilih File -> Baru di GUI JMeter dan pilih Rencana Tes. Kemudian, tambahkan elemen yang diperlukan ke rencana pengujian Anda, seperti Thread Groups, Samplers, Controllers, dan Listeners.
+- Konfigurasikan Elemen Pengujian: Setiap elemen dalam rencana pengujian Anda perlu dikonfigurasi sesuai dengan persyaratan pengujian Anda. Misalnya, Anda dapat mengonfigurasi Grup Utas untuk mensimulasikan jumlah pengguna dan waktu ramp-up, Sampler untuk mengirim permintaan ke aplikasi, dan Listener untuk mengumpulkan dan menampilkan hasil pengujian.
+- Jalankan Tes: Setelah rencana pengujian Anda dikonfigurasi, Anda dapat menjalankan tes dengan mengklik tombol Jalankan di JMeter GUI. JMeter akan mulai mengirimkan permintaan ke aplikasi atau sistem sesuai dengan rencana pengujian Anda, dan akan mengumpulkan data tentang waktu respons, throughput, dan metrik lainnya.
+- Menganalisis Hasil: Setelah pengujian selesai, Anda dapat menganalisis hasilnya menggunakan pendengar bawaan JMeter atau dengan mengekspor data ke file dan menganalisisnya dalam spreadsheet atau alat lain. Hasilnya akan menunjukkan kepada Anda bagaimana kinerja aplikasi atau sistem saat dimuat, dan akan membantu Anda mengidentifikasi masalah kinerja apa pun yang perlu ditangani.
+
+## Post Processor (Plus Understanding JMeter Result)
+Di JMeter, post-processor adalah elemen yang digunakan untuk memodifikasi data yang dikembalikan oleh sampler sebelum dikirim ke langkah selanjutnya dalam rencana pengujian. post-prosesor sangat berguna saat menguji API atau aplikasi web yang mengembalikan data dalam format tertentu, seperti XML atau JSON, dan Anda perlu mengekstrak nilai tertentu dari respons untuk digunakan dalam permintaan berikutnya.
+
+Beberapa hal penting yang perlu diketahui tentang post-prosesor di JMeter meliputi:
+- Jenis Post-Processor: JMeter menyediakan beberapa jenis post-processor, termasuk Regular Expression Extractor, XPath Extractor, JSON Extractor, CSS/JQuery Extractor, dan BeanShell PostProcessor.
+- Kasus Penggunaan: Post-prosesor digunakan untuk mengekstraksi dan memanipulasi data dari respons sampler. Mereka dapat digunakan untuk mengekstrak nilai tertentu, seperti ID sesi, token, atau cookie autentikasi, dan untuk melakukan operasi pada data yang diekstraksi, seperti menambahkan awalan atau akhiran, atau mengonversinya ke format lain.
+- Lingkup Pasca-Prosesor: Pasca-prosesor dapat diterapkan di tingkat sampler atau di tingkat grup utas. Saat diterapkan pada level sampler, post-processor hanya diterapkan pada respons dari sampler tertentu. Saat diterapkan pada tingkat grup utas, prosesor pasca diterapkan ke respons semua sampel dalam grup utas tersebut.
+- Urutan Eksekusi: Di ​​JMeter, pasca-prosesor dieksekusi sesuai urutan kemunculannya dalam rencana pengujian. Ini berarti bahwa jika memiliki banyak post-processor, output dari satu post-processor dapat digunakan sebagai input untuk post-processor berikutnya.
+- Debugging: Saat menggunakan post-processor, penting untuk mengujinya secara menyeluruh dan men-debug setiap masalah yang muncul. untuk melakukannya dapat menggunakan alat debugging bawaan JMeter, seperti Pohon Tampilan Hasil atau Sampler Debug, untuk mengidentifikasi dan menyelesaikan masalah dengan logika post-prosesor.
+
+post-prosesor adalah fitur di JMeter yang memungkinkan untuk mengekstrak dan memanipulasi data dari respons sampel. Dengan menggunakan post-prosesor secara efektif,  rencana pengujian yang dibuat bisa lebih dinamis dan tangguh yang secara akurat mensimulasikan skenario dunia nyata. Memahami hasil laporan JMeter memerlukan analisis metrik yang dikumpulkan selama pengujian dan menginterpretasikan data dalam konteks rencana pengujian dan aplikasi atau sistem yang diuji. Berikut adalah beberapa langkah untuk membantu Anda memahami laporan JMeter:
+1. Review the Summary Report karena report tersebut meliputi overview dari pengujian respon time, eror rate, number request, dan throughput
+2. Check the Error Rate, karena didalamnya memiliki metrik yang mengindikasikan persentase dare request yang gagal dan masih banyak lagi
+3. Look at the Response Times, dapat menggunakan data waktu respons untuk mengidentifikasi hambatan atau area yang memerlukan pengoptimalan
+4. Analyze the Throughput, Ini dapat membantu memahami bagaimana kinerja aplikasi atau sistem Anda di bawah beban dan mengidentifikasi masalah kapasitas apa pun
+5. Use Graphs and Charts, JMeter menyediakan beberapa grafik dan bagan bawaan yang dapat membantu Anda memvisualisasikan hasil pengujian
+6. Compare Results, dapat membantu melacak dampak perubahan pada aplikasi atau sistem Anda dari waktu ke waktu.
