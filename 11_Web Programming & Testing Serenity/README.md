@@ -2,21 +2,22 @@
 
 ## Website Programming Menggunakan HTML
 Pemrograman website dengan HTML (Hypertext Markup Language) adalah proses pembuatan halaman web dan aplikasi web menggunakan HTML. HTML adalah bahasa markup yang digunakan untuk membuat dan memformat konten untuk web. Ini adalah bahasa markup standar untuk membuat halaman web dan digunakan bersama dengan teknologi web lainnya seperti CSS (Cascading Style Sheets) dan JavaScript. HTML menyediakan sekumpulan tag dan atribut yang digunakan untuk menentukan struktur dan konten halaman web. Sebagai contoh, tag <html> mendefinisikan awal dari dokumen HTML, tag <head> berisi informasi tentang dokumen seperti judul dan tautan ke stylesheet, dan tag <body> berisi konten utama dokumen. contoh sederhana dari programnya yaitu
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>ELISA'S PAGE</title>
-  </head>
-  <body>
-    <h1>XX SELAMAT DATANGGG!</h1>
-    <p>This is a paragraph of text.</p>
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ul>
-  </body>
-</html>
+
+// <!DOCTYPE html>
+// <html>
+//  <head>
+//    <title>ELISA'S PAGE</title>
+//  </head>
+//  <body>
+//    <h1>XX SELAMAT DATANGGG!</h1>
+//    <p>This is a paragraph of text.</p>
+//    <ul>
+//      <li>Item 1</li>
+//      <li>Item 2</li>
+//      <li>Item 3</li>
+//    </ul>
+//  </body>
+// </html>
 
 Pada contoh ini, dokumen HTML dasar dengan judul dan beberapa konten. Deklarasi <!DOCTYPE html> digunakan untuk menentukan versi HTML. Tag <html> mendefinisikan awal dokumen HTML, dan tag <head> dan <body> masing-masing berisi informasi tentang dokumen atau konten utama. Tag <h1> digunakan untuk membuat judul, dan tag <p> digunakan untuk membuat paragraf. Tag <ul> digunakan untuk membuat daftar tidak berurutan, dan tag <li> menentukan setiap item dalam daftar. pemrograman web dengan HTML melibatkan penggunaan tag dan atribut HTML untuk membuat struktur dan konten halaman web dan aplikasi web. teknologi web lainnya seperti CSS dan JavaScript digunakan bersama dengan HTML untuk membuat halaman web dan aplikasi web yang lebih canggih.
 
