@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>Elisandra Form Part 2</title>
+
+    <style>
+         body {
+            background-color: #ffffff;
+            text-align: center;
+        }
+        head, body {
+             border: 3px solid rgb(164, 215, 249);
+             padding: 20px;
+             border-radius: 5px;
+        }
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+        }
+
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-control input,
+        .form-control select {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+            height: 70px;
+        }
+        button {
+            background-color: #5fabf7;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 21px;
+            color:#fff;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+    <body>
+        <h1>Welcome to Digital Library</h1>
+        <p> create a new member</p>
+    <form id="form">
+
+             <div class="form-control">
+                 <label for="name" id="label-name">
+                  Name
+                 </label>
+
+                 <input type="text"
+                   id="name"
+                   placeholder="    " />
+             </div>
+             <div class="form-control">
+                <label for="email" id="label-email">
+                    Email
+                </label>
+
+                <input type="text"
+                       id="email"
+                       placeholder="      " />
+             </div>
+
+             <div class="form-control">
+                <label for="password" id="label-password">
+                    Password
+                </label>
+
+                <input type="text"
+                       id="password"
+                       placeholder="      " />
+            </div>
+
+            <div class="form-control">
+                <label for="Phone Number" id="label-phone">
+                    Phone Number
+                </label>
+
+                <input type="text"
+                       id="Phone"
+                       placeholder="   " />
+            </div>
+
+            <div class="form-control">
+                <label for="address">
+                    Address
+                </label>
+
+                <textarea name="address" id="address"
+                    placeholder="      ">
+                </textarea>
+            </div>
+
+            <div class="form-control">
+                <label>
+                    Gender
+                </label>
+
+                <label for="recommed-1">
+                    <input type="radio"
+                           id="recommed-1"
+                           name="recommed">Male</input>
+                </label>
+                <label for="recommed-2">
+                    <input type="radio"
+                           id="recommed-2"
+                           name="recommed">Female</input>
+                </label>
+            </div>
+
+        <button type="submit" value="submit">
+                Submit
+        </button>
+    </form>
+    </body>
+</html>

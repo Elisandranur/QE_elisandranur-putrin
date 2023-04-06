@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Elisandra Form Library</title>
+</head>
+<body>
+    <h1>Welcome to Digital Library</h1>
+    <p> create a new member</p>
+<form>
+    <table>
+        <tr>
+            <td>
+                Name:
+            </td>
+            <td>
+                <input type="text" placeholder="Name" name=" ">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email:
+            </td>
+            <td>
+                <input type="mail" placeholder="email" name=" ">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password:
+            </td>
+            <td>
+                <input type="Password" placeholder="Password" name=" ">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Phone Number:
+            </td>
+            <td>
+                <input type="number" placeholder="phone number" name=" ">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Address:
+            </td>
+            <td>
+		    <textarea name="Address" id="Address"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Gender :
+            </td>
+            <td>
+               <input type="radio" name="Gender">male
+               <input type="radio" name="Gender">female
+            </td>
+        </tr>
+
+    </table>
+    <button>Register</button>
+</form>
+</body>
+</html>
