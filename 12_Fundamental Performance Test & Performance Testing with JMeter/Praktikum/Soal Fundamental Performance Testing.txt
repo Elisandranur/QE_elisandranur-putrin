@@ -1,0 +1,28 @@
+1. Jelaskan jenis-jenis dari performance testing.
+>> Performance testing adalah jenis pengujian perangkat lunak yang mengevaluasi seberapa baik kinerja sistem di bawah kondisi 
+beban kerja yang berbeda. Ada beberapa jenis pengujian kinerja yang dapat Anda lakukan tergantung pada tujuan pengujian.
+Berikut beberapa jenis yang paling umum:
+a. Pengujian beban(Load testing): Jenis pengujian ini melibatkan simulasi sejumlah besar pengguna atau transaksi bersamaan untuk melihat 
+   bagaimana sistem merespons di bawah beban berat. Tujuan dari pengujian beban adalah untuk mengidentifikasi hambatan kinerja, 
+   seperti waktu respons yang lambat atau kerusakan sistem, dan untuk menentukan beban maksimum yang dapat ditangani oleh sistem.
+
+b. Stress testing(Stress testing): Stress testing melibatkan pengujian sistem di luar kondisi operasi normalnya, seperti dengan menambah beban atau 
+   durasi pengujian. Tujuan dari stress testing adalah untuk mengidentifikasi titik putus dari sistem dan untuk memastikan bahwa 
+   sistem dapat pulih dengan baik dari kegagalan. 
+
+c. Pengujian daya tahan(Endurance testing): Jenis pengujian ini melibatkan pengujian sistem di bawah beban berkelanjutan untuk jangka waktu yang lama, 
+   seperti beberapa hari atau minggu. Tujuan dari pengujian ketahanan adalah untuk mengidentifikasi masalah kinerja yang mungkin muncul 
+   dari waktu ke waktu, seperti kebocoran memori atau kehabisan sumber daya. 
+
+d. Pengujian lonjakan(Spike testing): Pengujian lonjakan melibatkan pengujian sistem di bawah peningkatan beban yang tiba-tiba dan tajam. Tujuan dari 
+   pengujian lonjakan adalah untuk menentukan bagaimana sistem merespons ledakan aktivitas yang tiba-tiba dan untuk memastikan bahwa 
+   sistem dapat menangani lonjakan lalu lintas yang tidak terduga.
+
+e. Pengujian skalabilitas(Scalability testing): Pengujian skalabilitas melibatkan pengujian kemampuan sistem untuk menangani peningkatan beban dengan 
+   menambahkan lebih banyak sumber daya, seperti perangkat keras atau perangkat lunak. Tujuan dari pengujian skalabilitas adalah 
+   untuk menentukan kapasitas maksimum sistem dan untuk mengidentifikasi kemacetan yang dapat mencegah penskalaan secara efektif.
+
+f. Pengujian volume(Volume testing): Pengujian volume melibatkan pengujian kemampuan sistem untuk menangani volume data yang besar, 
+   seperti dengan menguji kinerja database atau sistem file. Tujuan dari pengujian volume adalah untuk memastikan bahwa sistem 
+   dapat menangani volume data yang diharapkan dan untuk mengidentifikasi masalah kinerja yang mungkin timbul dengan kumpulan data yang besar.
+
