@@ -21,21 +21,18 @@ Appium menyediakan platform yang fleksibel dan kuat untuk pengujian seluler, mem
 
 Ketika melakukan Setup desired capabilities, perlu memerhatikan hal berikut ini, desired capabilities adalah istilah yang digunakan di Appium dan alat otomatisasi pengujian lainnya untuk menjelaskan serangkaian pengaturan konfigurasi yang digunakan untuk menyesuaikan perilaku skrip otomatisasi pengujian. Kemampuan yang diinginkan khusus untuk perangkat seluler atau emulator yang menjalankan skrip, dan menentukan parameter yang diperlukan untuk membuat koneksi antara skrip pengujian dan perangkat. Untuk menyiapkan desired capabilities di Appium, perlu untuk menentukan sejumlah pasangan key-value yang menjelaskan karakteristik perangkat dan aplikasi yang sedang Anda uji. misalkan berikut merupakan desired capabilities yang diinginkan:
 
-platformName: Nama platform seluler, "Android" atau "iOS".
-deviceName: Nama perangkat seluler atau emulator yang ingin Anda uji.
-app: Jalur ke file APK atau IPA dari aplikasi yang ingin Anda uji.
-appPackage: Nama paket aplikasi yang ingin Anda uji.
-appActivity: Aktivitas utama aplikasi yang ingin Anda uji.
-automationName: Nama mesin otomatisasi yang harus digunakan, "Appium" (default) atau "UiAutomator2" (untuk Android) atau "XCUITest" (untuk iOS).
+- platformName: Nama platform seluler, "Android" atau "iOS".
+- deviceName: Nama perangkat seluler atau emulator yang ingin Anda uji.
+- app: Jalur ke file APK atau IPA dari aplikasi yang ingin Anda uji.
+- appPackage: Nama paket aplikasi yang ingin Anda uji.
+- appActivity: Aktivitas utama aplikasi yang ingin Anda uji.
+- automationName: Nama mesin otomatisasi yang harus digunakan, "Appium" (default) atau "UiAutomator2" (untuk Android) atau "XCUITest" (untuk iOS).
 
 Berikut adalah contoh pengaturan desired capabilities di Java:
 
-DesiredCapabilities caps = new DesiredCapabilities();
-caps.setCapability("platformName", "Android");
-caps.setCapability("deviceName", "Pixel_3a_API_29");
-caps.setCapability("app", "/path/to/app.apk");
-caps.setCapability("appPackage", "com.example.myapp");
-caps.setCapability("appActivity", "com.example.myapp.MainActivity");
-caps.setCapability("automationName", "UiAutomator2");
+- DesiredCapabilities caps = new DesiredCapabilities();
+- caps.setCapability("deviceName", "Pixel_3a_API_29");
+- caps.setCapability("appPackage", "com.example.myapp");
+- caps.setCapability("automationName", "UiAutomator2");
 
 Dalam contoh ini, capa yang di set merupakan yang diinginkan untuk perangkat Android, menentukan nama perangkat, jalur ke file APK aplikasi, nama paket, aktivitas utama, dan mesin otomasi yang harus digunakan. Dengan menyetel desired capabilities di Appium, skrip dapat disesuaikan dengan otomatisasi pengujian agar cocok dengan karakteristik perangkat dan aplikasi yang diuji, memastikan pengujian berjalan lancar dan akurat.
