@@ -1,0 +1,8 @@
+Pengujiann menggunakan Jmeter Post Processor yang dilakukan yaitu dengan menguji fitur pembelian tiket penerbangan
+untuk variabel yang digunakan sudah saya terakan pada bagian screenshot(509) dan  memerlukan penmbahan fitur regular 
+expression extractor (Screenshot(522)) untuk saling mengaitkan anatara pemilihan penerbangan dan pengisian data penumpangnya sebagai 
+salah satu metode post prosesor. 
+Kemudian setelah dilakukan eksekusi/run menghasilkan bahwa data berhasil untuk dilakukan metode POST ke sistemnya
+kemudian pada summary report ditunjukkan bahwa dari dua request yang diajukan tidak mengalami eror dan masing-masingnya untuk 1 request
+waktu sekitar 1.8/secon dan 2.2/secon. Jika kemudian memperhatikan hasil aggregate reportnya disitu ditunjukkan berapa waktu yang dibutuhkan untuk mencapai kriteria
+misalkan 95% line hingga 99% line -nya. 
