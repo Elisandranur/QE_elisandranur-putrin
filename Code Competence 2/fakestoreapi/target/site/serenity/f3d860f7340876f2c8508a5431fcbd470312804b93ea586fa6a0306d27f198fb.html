@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Short Result by Desc GET Cart</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<!-- ImgPreview -->
+<script src="scripts/imgpreview.full.jquery.js" type="text/javascript"></script>
+</head>
+
+<body class="results-page">
+
+
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity BDD Report</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs">Home</a>
+
+ <!-- inflection.of(breadcrumb.displayName).asATitle()-->
+            > <a href="3670c24883efba2061f2f3e3440707ea37054b99f0e1f61f235c4bd242f6e804.html">CART of product</a>
+        > Short Result by Desc GET Cart
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-04-2023 12:54</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                                <div>
+                                    <h3 class="discreet-story-header">
+                                        <i class="fs-2 bi bi-chat-left-quote title-icon"></i>
+                                        <span class="story-header-title">CART Of Product </span>
+                                    </h3>
+
+                                </div>
+
+                        </td>
+                        <td valign="top">
+                            <p class="tag">
+                                    <span class="badge example-tag tag-badge" style="background:default;">
+                                    <i class="bi bi-tag-fill"></i>&nbsp;
+                                        <a class="tagLink" style="background:default;"
+                                           href="f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.html">Windows
+                                        </a>
+                                </span>
+                                    <span class='context-icon'><i class='bi bi-windows' title='Windows'></i></span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">
+                                    Short Result by Desc GET Cart
+                                        <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+</div>
+</div>
+
+<div class="clr"></div>
+
+
+<div id="beforetable"></div>
+
+
+<div id="tablecontents">
+    <div>
+        <table class="step-table">
+            <tr class="step-titles">
+                <th width="65">
+                </th>
+                <th class="step-description-column greentext">
+                    Steps
+                </th>
+
+                <th width="130" class="greentext">Outcome</th>
+                <th width="100" class="greentext"><i title="Duration" class="bi bi-stopwatch"></i></th>
+            </tr>
+            <tr class="step-table-separator">
+                <td colspan="5"></td>
+            </tr>
+
+                <tr class="test-SUCCESS">
+
+                    <td width="50" class="step-icon">
+                        <a name="0"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection0 success-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                                Given I set GET api endpoint for limit view
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">085ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection0" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="0-0"></a>
+                            <span style="margin-left: 40px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                I set for GET cart endpoint
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">004ms</span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="50" class="step-icon">
+                        <a name="1"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection1 success-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                                When I send request with Limit Get
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">1s 677ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection1" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="1-0"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection1-0 success-icon"
+                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                I set the limit desc for GET the cart
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1s 664ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection1-0" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="1-0-0"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                I set for GET cart endpoint
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">004ms</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="1-0-1"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                GET https://fakestoreapi.com?sort=desc
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-6">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://fakestoreapi.com?sort=desc</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: null</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept=*/*</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Date: Sun, 16 Apr 2023 05:54:48 GMT<br>Content-Type: text/html; charset=utf-8<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Access-Control-Allow-Origin: *<br>X-Powered-By: Express<br>CF-Cache-Status: DYNAMIC<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=R6UwYbFmPatqI%2FPtoPB7UksBCBBz1NQjB2K%2FLuV7XSnDwjLUn4U%2FoOm5mvi2OKc%2F9HCkr4P5Q%2FxZOZzmxYyvJY9fOaC3IM%2BzHA9fBXtc%2BkBwBD9Wi%2FVxlI0sZs3zjjVLU%2BXF&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Server: cloudflare<br>CF-RAY: 7b8a2cf64b554649-SIN<br>Content-Encoding: gzip<br>alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400</pre>
+                                <h4>Response Body</h4>
+                                    <pre>&lt;html lang=&quot;en&quot;&gt;<br>  &lt;head&gt;<br>    &lt;meta charset=&quot;UTF-8&quot;/&gt;<br>    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;/&gt;<br>    &lt;meta name=&quot;description&quot; content=&quot;Fake store rest api for your ecommerce or shopping website prototype&quot;/&gt;<br>    &lt;link rel=&quot;stylesheet&quot; href=&quot;/dist/master.min.css&quot;/&gt;<br>    &lt;title&gt;Fake Store API&lt;/title&gt;<br>    &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;180x180&quot; href=&quot;/apple-touch-icon.png&quot;/&gt;<br>    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;32x32&quot; href=&quot;/favicon-32x32.png&quot;/&gt;<br>    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;16x16&quot; href=&quot;/favicon-16x16.png&quot;/&gt;<br>    &lt;link rel=&quot;manifest&quot; href=&quot;/site.webmanifest&quot;/&gt;<br>    &lt;link rel=&quot;mask-icon&quot; href=&quot;/safari-pinned-tab.svg&quot; color=&quot;#5bbad5&quot;/&gt;<br>    &lt;meta name=&quot;msapplication-TileColor&quot; content=&quot;#802c6e&quot;/&gt;<br>    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot;/&gt;<br>    &lt;meta property=&quot;og:locale&quot; content=&quot;fa_IR&quot;/&gt;<br>    &lt;meta property=&quot;og:type&quot; content=&quot;website&quot;/&gt;<br>    &lt;meta property=&quot;og:title&quot; content=&quot;Fake Store API&quot;/&gt;<br>    &lt;meta property=&quot;og:description&quot; content=&quot;Fake store rest api for your ecommerce or shopping website prototype&quot;/&gt;<br>    &lt;meta property=&quot;og:url&quot; content=&quot;fakestoreapi.com&quot;/&gt;<br>    &lt;meta property=&quot;og:site_name&quot; content=&quot;Fake Store API&quot;/&gt;<br>    &lt;script async=&quot;async&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-160318377-2&quot;/&gt;<br>    &lt;script&gt;<br>        window.dataLayer = window.dataLayer || [];<br><br>        function gtag() {<br>            dataLayer.push(arguments);<br>        }<br>        gtag('js', new Date());<br><br>        gtag('config', 'UA-160318377-2');<br>    &lt;/script&gt;<br>    &lt;style&gt;<br>        .alert {<br>            width: 100%;<br>            padding: 15px;<br>            background-color: #802c6e;<br>            color: #fff;<br>            text-align: center;<br>        }<br><br>        .alert a {<br>            color: #fff;<br>            border-bottom: 1px dashed #fff;<br>            padding-bottom: 1px;<br>        }<br><br>        .close-alert {<br>            position: absolute;<br>            right: 10px;<br>            top: 10px;<br>            color: #fff;<br>            border: none;<br>            outline: none;<br>            background-color: transparent;<br>            font-size: 2em<br>        }<br>    &lt;/style&gt;<br>    &lt;script async=&quot;async&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3819632897977577&quot; crossorigin=&quot;anonymous&quot;/&gt;<br>  &lt;/head&gt;<br>  &lt;body&gt;<br>    &lt;div class=&quot;container&quot;&gt;<br>      &lt;nav&gt;<br>        &lt;button type=&quot;submit&quot; id=&quot;menu-icon&quot;&gt;<br>          &lt;span/&gt;<br>          &lt;span/&gt;<br>        &lt;/button&gt;<br>        &lt;a shape=&quot;rect&quot; class=&quot;logo&quot; href=&quot;/&quot;&gt;<br>          &lt;img src=&quot;/icons/logo.png&quot;/&gt;<br>        &lt;/a&gt;<br>        &lt;ul id=&quot;menu&quot;&gt;<br>          &lt;li&gt;<br>            &lt;a shape=&quot;rect&quot; href=&quot;/&quot;&gt;Home&lt;/a&gt;<br>          &lt;/li&gt;<br>          &lt;li&gt;<br>            &lt;a shape=&quot;rect&quot; href=&quot;/docs&quot;&gt;Docs&lt;/a&gt;<br>          &lt;/li&gt;<br>          &lt;li&gt;<br>            &lt;a shape=&quot;rect&quot; href=&quot;https://github.com/keikaavousi/fake-store-api&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;GitHub&lt;/a&gt;<br>          &lt;/li&gt;<br>          &lt;li&gt;<br>            &lt;a shape=&quot;rect&quot; target=&quot;_blank&quot; href=&quot;https://donate.keikaavousi.com&quot;&gt;Buy me a coffee&lt;/a&gt;<br>          &lt;/li&gt;<br>        &lt;/ul&gt;<br>      &lt;/nav&gt;<br>      &lt;main&gt;<br>        &lt;section class=&quot;row&quot;&gt;<br>          &lt;div class=&quot;col-md-6 intro&quot;&gt;<br>            &lt;h1&gt;Fake Store API&lt;/h1&gt;<br>            &lt;p&gt; Fake store rest API for your e-commerce or shopping website prototype&lt;/p&gt;<br>            &lt;div class=&quot;btns&quot;&gt;<br>              &lt;a shape=&quot;rect&quot; class=&quot;btn btn-large btn-primary&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; href=&quot;https://github.com/keikaavousi/fake-store-api&quot;&gt;<br>View on GitHub                 &lt;img src=&quot;/icons/github.svg&quot;/&gt;<br>              &lt;/a&gt;<br>              &lt;a shape=&quot;rect&quot; class=&quot;btn btn-large btn-secondary&quot; href=&quot;/docs&quot;&gt;<br>Read Docs                 &lt;img src=&quot;/icons/book.svg&quot;/&gt;<br>              &lt;/a&gt;<br>            &lt;/div&gt;<br>          &lt;/div&gt;<br>          &lt;div class=&quot;col-md-6 intro-img&quot;&gt;<br>            &lt;img src=&quot;/icons/intro.svg&quot;/&gt;<br>          &lt;/div&gt;<br>        &lt;/section&gt;<br>        &lt;section class=&quot;row about&quot;&gt;<br>          &lt;h3 class=&quot;center-align col-md-12&quot;&gt;Get tired of Lorem ipsum data?!&lt;/h3&gt;<br>          &lt;h3 class=&quot;center-align col-md-12&quot;&gt;Didn't you find any free e-commerce API?!&lt;/h3&gt;<br>          &lt;p class=&quot;center-align&quot;&gt;<br>fakeStoreApi is a free online REST API that you can use whenever you need Pseudo-real data for your e-commerce<br>or shopping website without running any server-side code. It's awesome for teaching purposes, sample codes,<br>tests, etc.<br>&lt;/p&gt;<br>        &lt;/section&gt;<br>        &lt;section id=&quot;try&quot; class=&quot;row&quot;&gt;<br>          &lt;h2 class=&quot;heading&quot;&gt;Example Code&lt;/h2&gt;<br>          &lt;pre&gt;<br>            &lt;code&gt;fetch('https://fakestoreapi.com/products/1')<br>            .then(res=&amp;gt;res.json())<br>            .then(json=&amp;gt;console.log(json))&lt;/code&gt;<br>          &lt;/pre&gt;<br>          &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot; id=&quot;fetch_btn&quot;&gt;Try it&lt;/button&gt;<br>          &lt;pre id=&quot;result&quot;&gt;<br>            &lt;code/&gt;<br>          &lt;/pre&gt;<br>        &lt;/section&gt;<br>        &lt;section class=&quot;row&quot;&gt;<br>          &lt;h2 class=&quot;heading&quot;&gt;Resources&lt;/h2&gt;<br>          &lt;p&gt;There are 4 main resources need in shopping prototypes&lt;/p&gt;<br>          &lt;ul class=&quot;list&quot;&gt;<br>            &lt;li&gt;<br>              &lt;a shape=&quot;rect&quot; href=&quot;/products&quot;&gt;Products&lt;/a&gt;<br>              &lt;span&gt;20 products&lt;/span&gt;<br>            &lt;/li&gt;<br>            &lt;li&gt;<br>              &lt;a shape=&quot;rect&quot; href=&quot;/carts&quot;&gt;Cart&lt;/a&gt;<br>20 cart item            &lt;/li&gt;<br>            &lt;li&gt;<br>              &lt;a shape=&quot;rect&quot; href=&quot;/users&quot;&gt;Users&lt;/a&gt;<br>10 users            &lt;/li&gt;<br>            &lt;li&gt;<br>              &lt;a shape=&quot;rect&quot; href=&quot;href&quot;&gt;Login Token&lt;/a&gt;<br>              &lt;span class=&quot;badge&quot;&gt;New!&lt;/span&gt;<br>            &lt;/li&gt;<br>          &lt;/ul&gt;<br>          &lt;a shape=&quot;rect&quot; class=&quot;btn btn-primary&quot; href=&quot;/docs&quot;&gt;View Details on Docs&lt;/a&gt;<br>        &lt;/section&gt;<br>        &lt;section class=&quot;row&quot;&gt;<br>          &lt;h2 class=&quot;heading&quot;&gt;Routes&lt;/h2&gt;<br>          &lt;p&gt;All HTTP methods are supported&lt;/p&gt;<br>          &lt;ul class=&quot;list&quot;&gt;<br>            &lt;li&gt;<br>              &lt;span&gt;GET&lt;/span&gt;<br>              &lt;a shape=&quot;rect&quot; href=&quot;/products&quot;&gt;/products&lt;/a&gt;<br>            &lt;/li&gt;<br>            &lt;li&gt;<br>              &lt;span&gt;GET&lt;/span&gt;<br>              &lt;a shape=&quot;rect&quot; href=&quot;/products/1&quot;&gt;/products/1&lt;/a&gt;<br>            &lt;/li&gt;<br>            &lt;li&gt;<br>              &lt;span&gt;GET&lt;/span&gt;<br>              &lt;a shape=&quot;rect&quot; href=&quot;/products/categories&quot;&gt;/products/categories&lt;/a&gt;<br>            &lt;/li&gt;<br>            &lt;li&gt;<br>              &lt;span&gt;GET&lt;/span&gt;<br>              &lt;a shape=&quot;rect&quot; href=&quot;/products/category/jewelery&quot;&gt;/products/category/jewelery&lt;/a&gt;<br>            &lt;/li&gt;<br>            &lt;li&gt;<br>              &lt;span&gt;GET&lt;/span&gt;<br>              &lt;a shape=&quot;rect&quot; href=&quot;/cart?userId=1&quot;&gt;/cart?userId=1&lt;/a&gt;<br>            &lt;/li&gt;<br>            &lt;li&gt;<br>              &lt;span&gt;GET&lt;/span&gt;<br>              &lt;a shape=&quot;rect&quot; href=&quot;/products?limit=5&quot;&gt;/products?limit=5&lt;/a&gt;<br>            &lt;/li&gt;<br>            &lt;li&gt;<br>              &lt;span&gt;POST&lt;/span&gt;<br>/products            &lt;/li&gt;<br>            &lt;li&gt;<br>              &lt;span&gt;PUT&lt;/span&gt;<br>/products/1            &lt;/li&gt;<br>            &lt;li&gt;<br>              &lt;span&gt;PATCH&lt;/span&gt;<br>/products/1            &lt;/li&gt;<br>            &lt;li&gt;<br>              &lt;span&gt;DELETE&lt;/span&gt;<br>/products/1            &lt;/li&gt;<br>          &lt;/ul&gt;<br>          &lt;a shape=&quot;rect&quot; class=&quot;btn btn-primary&quot; href=&quot;/docs&quot;&gt;View Details on Docs&lt;/a&gt;<br>        &lt;/section&gt;<br>        &lt;script&gt;<br>    let wrapper = document.querySelector('#result code')<br>    let loading = document.createElement('span')<br>    loading.className = &quot;loading&quot;<br><br>    document.getElementById(&quot;fetch_btn&quot;).addEventListener('click', function () {<br>        wrapper.appendChild(loading)<br>        fetch('https://fakestoreapi.com/products/1')<br>            .then(res =&amp;gt; res.json())<br>            .then(json =&amp;gt; {<br>                wrapper.textContent = JSON.stringify(json, undefined, 2)<br>            })<br>    })<br>&lt;/script&gt;<br>      &lt;/main&gt;<br>    &lt;/div&gt;<br>    &lt;footer&gt;<br>      &lt;p&gt;<br>Made with         &lt;span class=&quot;heart&quot;&gt;♥&lt;/span&gt;<br> by         &lt;a shape=&quot;rect&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; href=&quot;https://keikaavousi.com&quot;&gt;MohammadReza Keikavousi&lt;/a&gt;<br>      &lt;/p&gt;<br>      &lt;a shape=&quot;rect&quot; class=&quot;donate&quot; href=&quot;https://donate.keikaavousi.com&quot; target=&quot;_blank&quot;&gt;<br>        &lt;img src=&quot;/icons/coffee.svg&quot;/&gt;<br><br>Buy me a coffee      &lt;/a&gt;<br>    &lt;/footer&gt;<br>    &lt;script src=&quot;/js/polyfill.min.js&quot;/&gt;<br>    &lt;script&gt;<br>    let icon = document.getElementById(&quot;menu-icon&quot;)<br>    let menu = document.getElementById(&quot;menu&quot;)<br><br>    document.getElementById(&quot;menu-icon&quot;).addEventListener('click', function (e) {<br>        icon.classList.toggle(&quot;open&quot;)<br>        menu.classList.toggle(&quot;open&quot;)<br>        document.body.classList.toggle(&quot;fix&quot;)<br>        document.documentElement.classList.toggle(&quot;body-fix&quot;)<br>    })<br>&lt;/script&gt;<br>    &lt;script&gt;<br>    // let targetAnchor = document.getElementById(&quot;try&quot;)<br><br>    let links = document.querySelectorAll(&quot;a[href*='#']&quot;)<br><br>    for (let i = 0; i &amp;lt; links.length; i++) {<br>        links[i].addEventListener('click', function (e) {<br>            e.preventDefault()<br><br>            let hash = links[i].hash<br>            let targetAnchor = document.querySelector(hash)<br>            console.log(hash, targetAnchor.offsetTop, window.scrollY)<br><br>            window.scrollTo({<br>                top: targetAnchor.offsetTop + 620,<br>                behavior: 'smooth'<br>            });<br><br>        })<br>    }<br><br>    const close_alert = document.getElementById('close_alert')<br>    const donate_alert = document.getElementById('donate_alert')<br>    close_alert.addEventListener('click', () =&amp;gt; {<br>        donate_alert.style.display = 'none'<br>    })<br>&lt;/script&gt;<br>  &lt;/body&gt;<br>&lt;/html&gt;</pre>
+                                    <h4>Response Cookies</h4>
+                                    <pre></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="50" class="step-icon">
+                        <a name="2"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection2 success-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                                Then I receive the cart list with desc
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">016ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection2" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="2-0"></a>
+                            <span style="margin-left: 40px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                I receive 200 code response
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">005ms</span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="50" class="step-icon">
+                        <a name="3"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection3 success-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                                And I got verified code success 200
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">009ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection3" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="3-0"></a>
+                            <span style="margin-left: 40px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                I got the carts with limit I set
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">001ms</span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+            <tr class="test-SUCCESS">
+                    <td colspan="2"></td>
+                <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                <td width="100"><span class="top-level-step"><em>1.83s</em></span></td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+
+<div id="beforefooter"></div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <span class="version">Serenity BDD version 3.6.21</span>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function toggleDiv(divId) {
+        $("#" + divId).toggle();
+        var $icon = $(".img" + divId);
+        $icon.toggleClass("bi-caret-right-square");
+        $icon.toggleClass("bi-caret-down-square");
+    }
+</script>
+
+
+<script type="text/javascript">
+    //<![CDATA[
+
+    $(document).ready(function () {
+        $('img.screenshot').imgPreview({
+            imgCSS: {
+                width: '500px'
+            },
+            distanceFromCursor: {top: 10, left: -200}
+        });
+    });
+
+    //]]>
+</script>
+<div id="imgPreviewContainer" style="position: absolute; top: 612px; left: 355px; display: none; " class=""><img
+            src="" style="display: none; "></div>
+<div id="imgPreviewContainer2" style="position: absolute; top: 925px; left: 320px; display: none; " class="">
+    <img style="width: 200px; display: none; " src=""></div>
+<div id="imgPreviewWithStyles" style="position: absolute; top: 1272px; left: 321px; display: none; " class="">
+    <img style="height: 200px; opacity: 1; display: none; " src=""></div>
+<div id="imgPreviewWithStyles2" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+<div id="imgPreviewWithStyles3" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+
+</div>
+</body>
+</html>

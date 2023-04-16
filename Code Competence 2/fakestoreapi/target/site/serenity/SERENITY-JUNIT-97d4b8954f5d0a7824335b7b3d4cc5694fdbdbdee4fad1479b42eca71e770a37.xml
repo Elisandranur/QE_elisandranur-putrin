@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="CART of product" skipped="0" tests="4" time="18.02" timestamp="2023-04-16 12:54:31"><testcase name="GET single cart by id"/><testcase name="GET carts with limit number"/><testcase name="Short Result by Desc GET Cart"/><testcase name="PUT new add product for any cart"/></testsuite>

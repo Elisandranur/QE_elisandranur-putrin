@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"LOGIN for admin fakestoreapi","POST valid username and password to Login","SUCCESS","2023-04-16T12:54:49.8690624+07:00[Asia/Jakarta]","0.0","1.3"
+"LOGIN for admin fakestoreapi","POST INVALID password and Valid Username","SUCCESS","2023-04-16T12:54:51.1962428+07:00[Asia/Jakarta]","0.0","1.26"

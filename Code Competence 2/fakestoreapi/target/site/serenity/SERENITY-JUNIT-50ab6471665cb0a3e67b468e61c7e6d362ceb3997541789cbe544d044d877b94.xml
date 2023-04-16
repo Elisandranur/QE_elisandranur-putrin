@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="USER feature" skipped="0" tests="4" time="3.88" timestamp="2023-04-16 12:54:58"><testcase name="Get All data users"/><testcase name="POST new data for new user"/><testcase name="PUT for update data user"/><testcase name="DELETE data user exist"/></testsuite>

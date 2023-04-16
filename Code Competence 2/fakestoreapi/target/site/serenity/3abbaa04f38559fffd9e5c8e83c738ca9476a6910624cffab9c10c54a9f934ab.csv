@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"USER feature","Get All data users","SUCCESS","2023-04-16T12:54:58.4919717+07:00[Asia/Jakarta]","0.0","0.96"
+"USER feature","PUT for update data user","SUCCESS","2023-04-16T12:55:00.7900759+07:00[Asia/Jakarta]","0.0","0.74"
+"USER feature","DELETE data user exist","SUCCESS","2023-04-16T12:55:01.5456375+07:00[Asia/Jakarta]","0.0","0.9"

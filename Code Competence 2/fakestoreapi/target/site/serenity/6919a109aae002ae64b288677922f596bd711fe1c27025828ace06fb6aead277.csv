@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Access Product from Shop","Get Product by id","SUCCESS","2023-04-16T12:54:52.4956967+07:00[Asia/Jakarta]","0.0","1.29"
+"Access Product from Shop","Get product by short the parameter","SUCCESS","2023-04-16T12:54:53.8289364+07:00[Asia/Jakarta]","0.0","1.51"
+"Access Product from Shop","Get the product by it's category","SUCCESS","2023-04-16T12:54:55.3753658+07:00[Asia/Jakarta]","0.0","1.19"
+"Access Product from Shop","POST new data of product","SUCCESS","2023-04-16T12:54:57.4437032+07:00[Asia/Jakarta]","0.0","1.03"

@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"CART of product","GET single cart by id","SUCCESS","2023-04-16T12:54:31.5267267+07:00[Asia/Jakarta]","0.0","13.56"
+"CART of product","GET carts with limit number","SUCCESS","2023-04-16T12:54:45.1913781+07:00[Asia/Jakarta]","0.0","1.32"
+"CART of product","Short Result by Desc GET Cart","SUCCESS","2023-04-16T12:54:46.5909186+07:00[Asia/Jakarta]","0.0","1.83"
+"CART of product","PUT new add product for any cart","SUCCESS","2023-04-16T12:54:48.4730319+07:00[Asia/Jakarta]","0.0","1.3"

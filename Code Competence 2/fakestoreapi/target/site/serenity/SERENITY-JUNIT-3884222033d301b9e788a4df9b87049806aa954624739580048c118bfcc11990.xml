@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="LOGIN for admin fakestoreapi" skipped="0" tests="2" time="2.56" timestamp="2023-04-16 12:54:49"><testcase name="POST valid username and password to Login"/><testcase name="POST INVALID password and Valid Username"/></testsuite>
