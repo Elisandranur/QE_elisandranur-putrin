@@ -1,0 +1,17 @@
+"ID","Title","Assigned To","Case ID","Comment","Defects","Elapsed","Estimate","Forecast","In Progress","Plan","Plan ID","Priority","References","Run","Run Configuration","Run ID","Section","Section Depth","Section Description","Status","Tested By","Tested On","Type","Version"
+"T4","Get all user","Elisandra Nur Putri Nararia","C3","","","","","","","","","Medium","","Test Run 4/15/2023","","R2","User Test Case","0","","Passed","Elisandra Nur Putri Nararia","4/16/2023 4:33 AM","Compatibility",""
+"T5","GET user by Id Data","Elisandra Nur Putri Nararia","C4","","","","","","","","","High","","Test Run 4/15/2023","","R2","User Test Case","0","","Passed","Elisandra Nur Putri Nararia","4/16/2023 4:33 AM","Other",""
+"T6","Add new user using POST Method","Elisandra Nur Putri Nararia","C5","","","","300s","300s","","","","High","","Test Run 4/15/2023","","R2","User Test Case","0","","Passed","Elisandra Nur Putri Nararia","4/16/2023 4:33 AM","Acceptance",""
+"T7","deleting user by id","Elisandra Nur Putri Nararia","C6","","","","","","","","","Medium","","Test Run 4/15/2023","","R2","User Test Case","0","","Passed","Elisandra Nur Putri Nararia","4/16/2023 4:33 AM","Functional",""
+"T8","Get single product by id","Elisandra Nur Putri Nararia","C8","","","","","","","","","Medium","","Test Run 4/15/2023","","R2","Product Test Case","0","","Passed","Elisandra Nur Putri Nararia","4/16/2023 4:33 AM","Accessibility",""
+"T9","Showing limit result testing","Elisandra Nur Putri Nararia","C9","","","","","","","","","High","","Test Run 4/15/2023","","R2","Product Test Case","0","","Passed","Elisandra Nur Putri Nararia","4/16/2023 4:33 AM","Other",""
+"T10","Validate admin can access product by category","Elisandra Nur Putri Nararia","C10","","","","","","","","","High","","Test Run 4/15/2023","","R2","Product Test Case","0","","Passed","Elisandra Nur Putri Nararia","4/16/2023 4:33 AM","Accessibility",""
+"T11","Verify that Admin can ADD NEW PRODUCT","Elisandra Nur Putri Nararia","C11","","","","","","","","","High","","Test Run 4/15/2023","","R2","Product Test Case","0","","Passed","Elisandra Nur Putri Nararia","4/16/2023 4:33 AM","Usability",""
+"T12","Verify that admin can update some product for newest","Elisandra Nur Putri Nararia","C12","","","","","","","","","High","","Test Run 4/15/2023","","R2","Product Test Case","0","","Passed","Elisandra Nur Putri Nararia","4/16/2023 4:33 AM","Performance",""
+"T13","verify that admin can delete some product by their id","Elisandra Nur Putri Nararia","C13","","","","","","","","","Medium","","Test Run 4/15/2023","","R2","Product Test Case","0","","Passed","Elisandra Nur Putri Nararia","4/16/2023 4:34 AM","Functional",""
+"T14","verify admin can access Cart by one id","Elisandra Nur Putri Nararia","C14","","","","","","","","","High","","Test Run 4/15/2023","","R2","Cart Test Case","0","","Passed","Elisandra Nur Putri Nararia","4/16/2023 4:34 AM","Accessibility",""
+"T15","Verify that admin can update the cart by id product","Elisandra Nur Putri Nararia","C15","","","","","","","","","Medium","","Test Run 4/15/2023","","R2","Cart Test Case","0","","Passed","Elisandra Nur Putri Nararia","4/16/2023 4:34 AM","Accessibility",""
+"T16","Verify that ADMIN can See the USER CARTS","Elisandra Nur Putri Nararia","C16","","","","","","","","","High","","Test Run 4/15/2023","","R2","Cart Test Case","0","","Passed","Elisandra Nur Putri Nararia","4/16/2023 4:34 AM","Accessibility",""
+
+
+
