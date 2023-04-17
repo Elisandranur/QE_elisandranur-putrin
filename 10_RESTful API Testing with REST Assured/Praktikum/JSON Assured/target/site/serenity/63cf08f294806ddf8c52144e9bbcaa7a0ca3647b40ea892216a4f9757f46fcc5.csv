@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"User Data","get all data user with parameter method","SUCCESS","2023-04-17T00:39:44.7675911+07:00[Asia/Jakarta]","0.0","0.68"
+"User Data","Get data by over id user number","SUCCESS","2023-04-17T00:39:46.5894815+07:00[Asia/Jakarta]","0.0","0.59"
+"User Data","Try delete with Invalid ID User","SUCCESS","2023-04-17T00:39:52.9841196+07:00[Asia/Jakarta]","0.0","0.91"

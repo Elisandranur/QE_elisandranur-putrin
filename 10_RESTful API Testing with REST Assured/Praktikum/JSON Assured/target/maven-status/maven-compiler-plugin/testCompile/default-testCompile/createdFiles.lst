@@ -1,0 +1,15 @@
+starter\stepdefinition\Delete.class
+starter\stepdefinition\GetNegative.class
+starter\stepdefinition\PUTpositive.class
+starter\stepdefinition\DeleteNegative.class
+starter\test\GetWrongData.class
+starter\stepdefinition\PUTNegative.class
+starter\test\putNegativeTest.class
+starter\stepdefinition\PostNegative.class
+starter\stepdefinition\POSTnew.class
+starter\stepdefinition\GetAll.class
+starter\user\UserSteps.class
+starter\CucumberTestSuite.class
+starter\stepdefinition\GET.class
+starter\test\alldatatest.class
+starter\stepdefinition\GetAllNegative.class

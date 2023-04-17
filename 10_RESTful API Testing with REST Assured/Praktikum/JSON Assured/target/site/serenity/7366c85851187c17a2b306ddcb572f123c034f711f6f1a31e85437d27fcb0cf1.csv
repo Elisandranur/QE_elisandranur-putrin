@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"User Data","GET data as admin able to get detail data user","SUCCESS","2023-04-17T00:39:45.4741885+07:00[Asia/Jakarta]","0.0","1.08"
+"User Data","POST new data user","SUCCESS","2023-04-17T00:39:47.2206273+07:00[Asia/Jakarta]","0.0","1.33"
+"User Data","POST new user data with some invalid requirement","SUCCESS","2023-04-17T00:39:48.5961872+07:00[Asia/Jakarta]","0.0","1.01"
+"User Data","PUT an update data for existing user","SUCCESS","2023-04-17T00:39:49.6310435+07:00[Asia/Jakarta]","0.0","1.13"
+"User Data","Test PUT update data with invalid userId","SUCCESS","2023-04-17T00:39:50.7804601+07:00[Asia/Jakarta]","0.0","1.14"
+"User Data","Try Delete User data","SUCCESS","2023-04-17T00:39:51.9469088+07:00[Asia/Jakarta]","0.0","1.02"
