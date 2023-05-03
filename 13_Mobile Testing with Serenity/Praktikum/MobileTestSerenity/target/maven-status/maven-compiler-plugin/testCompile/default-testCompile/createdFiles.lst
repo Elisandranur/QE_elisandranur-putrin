@@ -1,0 +1,4 @@
+starter\CucumberTestSuite.class
+starter\stepdefinitions\LoginSteps.class
+starter\hooks\BaseDriverHooks.class
+starter\pages\LoginScreen.class
